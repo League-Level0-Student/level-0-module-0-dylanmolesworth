@@ -22,6 +22,26 @@ public class MyRobotGame {
 		
 		JOptionPane.showMessageDialog(null, full_name);
 		
+		Object[] options = { "Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Pink" };
+		  int choice =  JOptionPane.showOptionDialog(null,
+				"What Is Your Favorite Color?", 
+				"Favorite Color",
+				JOptionPane.YES_NO_OPTION, 
+			      JOptionPane.QUESTION_MESSAGE,  
+			      null, 
+			      options, 
+			      options[0]);
+		  
+		  Object[] options1 = { "Male", "Female" };
+		  int choice1 =  JOptionPane.showOptionDialog(null,
+				"What gender would you like to be?", 
+				"Gender",
+				JOptionPane.YES_NO_OPTION, 
+			      JOptionPane.QUESTION_MESSAGE,  
+			      null, 
+			      options1, 
+			      options1[0]);
+		
 		JOptionPane.showMessageDialog(null, "Lets Make This World AMAZING!");
 		
 		
