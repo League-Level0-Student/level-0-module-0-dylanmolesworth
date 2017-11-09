@@ -7,7 +7,7 @@ public class MyRobotGame {
 		
 	Robot pen = new Robot();
 	
-	
+	pen.setWindowColor(15, 183, 255);
 	//pen variable
 	pen.setPenColor(0, 100, 0);
 	pen.sparkle();
@@ -30,11 +30,50 @@ public class MyRobotGame {
 		pen.move(1950);
 	}
 	
+	
+	pen.turn(-90);
+	
+	
+	
+	
 	pen.penUp();
-	pen.turn(-90);
-	pen.move(200);
-	pen.turn(-90);
-	pen.move(300);
+	
+	
+	pen.moveTo(100, 840);
+	
+	//second Tree
+	
+	
+	
+	for (int i = 0; i < 10; i++) {
+		pen.setPenColor(107, 47, 12);
+		pen.penDown();
+		pen.move(500);	
+		pen.setPenColor(17, 73, 8);
+		pen.turn(90);
+		pen.move(10);
+		pen.turn(90);
+		pen.move(10);
+		pen.turn(90);
+		pen.move(10);
+		pen.move(10);
+		pen.turn(90);
+		pen.move(10);
+		pen.penUp();
+		pen.turn(-180);
+		pen.move(500);
+		pen.turn(-90);
+		pen.move(50);
+		pen.turn(-90);
+			
+	}
+	pen.moveTo(50, 300);
+	pen.turn(90);
+	pen.setPenColor(255, 255, 255);
+	for (int i = 0; i < 10; i++) {
+		
+		
+	}
 	
 	Robot player = new Robot();
 	
