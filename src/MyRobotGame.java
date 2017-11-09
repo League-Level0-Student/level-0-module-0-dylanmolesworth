@@ -1,9 +1,30 @@
+import javax.swing.JOptionPane;
+
 import org.jointheleague.graphical.robot.KeyboardAdapter;
 import org.jointheleague.graphical.robot.Robot;
 
 public class MyRobotGame {
 	
 	public static void main(String[] args) {
+		
+		//PopUp Dialogue conversation
+		
+		JOptionPane.showMessageDialog(null, "Please Do Not Enter Your Real Name. Thank You.");
+		
+		String first_name;
+		first_name = JOptionPane.showInputDialog("What Is Your Name?");
+		
+		String family_name;
+		family_name = JOptionPane.showInputDialog("What Is your Last Name?");
+		
+		String full_name;
+		full_name = "Hello " + first_name + " from the " + family_name + " Family. I will just call you " + first_name;
+		
+		JOptionPane.showMessageDialog(null, full_name);
+		
+		JOptionPane.showMessageDialog(null, "Lets Make This World AMAZING!");
+		
+		
 		
 	Robot pen = new Robot();
 	
