@@ -13,6 +13,7 @@ public class MyRobotGame {
 		
 		String first_name;
 		first_name = JOptionPane.showInputDialog("What Is Your Name?");
+	
 		
 		String family_name;
 		family_name = JOptionPane.showInputDialog("What Is your Last Name?");
@@ -121,9 +122,32 @@ public class MyRobotGame {
 		pen.move(20);
 		pen.penDown();
 		pen.move(20);
-				
-		
 	}
+	
+	pen.moveTo(70, 365);
+	for (int i = 0; i < 10; i++) {
+		pen.penUp();
+		pen.move(20);
+		pen.penDown();
+		pen.move(20);
+	}
+	
+	pen.moveTo(70, 395);
+	for (int i = 0; i < 10; i++) {
+		pen.penUp();
+		pen.move(20);
+		pen.penDown();
+		pen.move(20);
+	}
+	
+	pen.moveTo(70, 425);
+	for (int i = 0; i < 10; i++) {
+		pen.penUp();
+		pen.move(20);
+		pen.penDown();
+		pen.move(20);
+	}
+	
 	//snow on ground
 			pen.moveTo(0, 845);
 			pen.move(525);
@@ -154,6 +178,142 @@ public class MyRobotGame {
 		pen.turn(-90);
 		
 	}
+	
+	//More Greenery
+	
+	pen.moveTo(590, 365);
+	pen.penDown();
+	pen.turn(90);
+	pen.setPenWidth(30);
+	for (int i = 0; i < 7; i++) {
+		
+		pen.setPenColor(17, 73, 8);
+		pen.penDown();
+		pen.move(20);
+		pen.turn(90);
+		pen.move(20);
+		pen.turn(90);
+		pen.move(20);
+		pen.turn(90);
+		pen.move(20);
+		pen.penUp();
+		pen.turn(90);
+		pen.move(10);
+		pen.turn(90);
+		pen.penDown();
+		pen.move(10);
+		pen.setPenColor(206, 14, 14);
+		pen.turn(-90);
+		pen.penUp();
+		pen.move(50);
+		
+	}
+	
+	pen.moveTo(590, 410);
+	
+for (int i = 0; i < 7; i++) {
+		
+	pen.setPenColor(17, 73, 8);
+	pen.penDown();
+	pen.move(20);
+	pen.turn(90);
+	pen.move(20);
+	pen.turn(90);
+	pen.move(20);
+	pen.turn(90);
+	pen.move(20);
+	pen.penUp();
+	pen.turn(90);
+	pen.move(10);
+	pen.turn(90);
+	pen.penDown();
+	pen.move(10);
+	pen.setPenColor(206, 14, 14);
+	pen.turn(-90);
+	pen.penUp();
+	pen.move(50);		
+		
+}
+
+pen.moveTo(590, 455);
+
+for (int i = 0; i < 7; i++) {
+		
+	pen.setPenColor(17, 73, 8);
+	pen.penDown();
+	pen.move(20);
+	pen.turn(90);
+	pen.move(20);
+	pen.turn(90);
+	pen.move(20);
+	pen.turn(90);
+	pen.move(20);
+	pen.penUp();
+	pen.turn(90);
+	pen.move(10);
+	pen.turn(90);
+	pen.penDown();
+	pen.move(10);
+	pen.setPenColor(206, 14, 14);
+	pen.turn(-90);
+	pen.penUp();
+	pen.move(50);		
+		
+}
+
+pen.moveTo(590, 500);
+
+for (int i = 0; i < 7; i++) {
+		
+	pen.setPenColor(17, 73, 8);
+	pen.penDown();
+	pen.move(20);
+	pen.turn(90);
+	pen.move(20);
+	pen.turn(90);
+	pen.move(20);
+	pen.turn(90);
+	pen.move(20);
+	pen.penUp();
+	pen.turn(90);
+	pen.move(10);
+	pen.turn(90);
+	pen.penDown();
+	pen.move(10);
+	pen.setPenColor(206, 14, 14);
+	pen.turn(-90);
+	pen.penUp();
+	pen.move(50);		
+		
+}
+
+pen.moveTo(590, 545);
+
+for (int i = 0; i < 7; i++) {
+		
+	pen.setPenColor(17, 73, 8);
+	pen.penDown();
+	pen.move(20);
+	pen.turn(90);
+	pen.move(20);
+	pen.turn(90);
+	pen.move(20);
+	pen.turn(90);
+	pen.move(20);
+	pen.penUp();
+	pen.turn(90);
+	pen.move(10);
+	pen.turn(90);
+	pen.penDown();
+	pen.move(10);
+	pen.setPenColor(206, 14, 14);
+	pen.turn(-90);
+	pen.penUp();
+	pen.move(50);		
+		
+}
+	
+	pen.turn(270);
 	
 	//desert
 	pen.moveTo(1000, 850);
@@ -189,7 +349,31 @@ public class MyRobotGame {
 	
 	}
 	
+	pen.moveTo(1000, 850);
+	//cacti
+	pen.turn(-90);
+	pen.setPenColor(19, 150, 19);
+	for (int i = 0; i < 4; i++) {
+		
+		pen.penDown();
+		pen.move(50);
+		pen.turn(180);
+		pen.move(10);
+		pen.turn(90);
+		pen.move(40);
+		pen.turn(90);
+		pen.move(20);
+		pen.penUp();
+		pen.turn(180);
+		pen.move(60);
+		pen.turn(-90);
+		pen.move(200);
+		pen.turn(-90);
+	}
+	
 	//sun
+	pen.penDown();
+	pen.turn(90);
 	pen.setPenColor(255, 93, 0);
 	pen.moveTo(1675, 0);
 	
