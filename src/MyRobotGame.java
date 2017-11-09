@@ -30,6 +30,12 @@ public class MyRobotGame {
 		pen.move(1950);
 	}
 	
+	pen.penUp();
+	pen.turn(-90);
+	pen.move(200);
+	pen.turn(-90);
+	pen.move(300);
+	
 	Robot player = new Robot();
 	
 	
