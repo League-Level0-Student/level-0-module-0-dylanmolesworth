@@ -1,11 +1,18 @@
+package RobotGame;
+import java.util.Scanner;
+
 import javax.swing.JOptionPane;
 
+import org.ietf.jgss.GSSName;
 import org.jointheleague.graphical.robot.KeyboardAdapter;
 import org.jointheleague.graphical.robot.Robot;
 
-public class MyRobotGame {
+public class RobotGameWorld {
 	
 	public static void main(String[] args) {
+		
+		//players
+
 		
 		//PopUp Dialogue conversation
 		
@@ -52,7 +59,8 @@ public class MyRobotGame {
 	pen.setWindowColor(15, 183, 255);
 	
 	
-	//pen variable
+	//pen variable'
+	
 	pen.setPenColor(0, 100, 0);
 	pen.sparkle();
 	pen.penDown();
@@ -62,6 +70,7 @@ public class MyRobotGame {
 	pen.turn(90);
 	pen.move(1950);
 	pen.setPenColor(80, 41, 12);
+	
 	
 	
 	//dirt
@@ -141,6 +150,22 @@ public class MyRobotGame {
 	}
 	
 	pen.moveTo(70, 425);
+	for (int i = 0; i < 10; i++) {
+		pen.penUp();
+		pen.move(20);
+		pen.penDown();
+		pen.move(20);
+	}
+	
+	pen.moveTo(70, 455);
+	for (int i = 0; i < 10; i++) {
+		pen.penUp();
+		pen.move(20);
+		pen.penDown();
+		pen.move(20);
+	}
+	
+	pen.moveTo(70, 485);
 	for (int i = 0; i < 10; i++) {
 		pen.penUp();
 		pen.move(20);
@@ -349,7 +374,7 @@ for (int i = 0; i < 7; i++) {
 	
 	}
 	
-	pen.moveTo(1000, 850);
+	pen.moveTo(1017, 850);
 	//cacti
 	pen.turn(-90);
 	pen.setPenColor(19, 150, 19);
@@ -390,15 +415,15 @@ for (int i = 0; i < 7; i++) {
 		
 	}
 	
-	pen.moveTo(-10, -10);
+	pen.moveTo(-20, -20);
 	
-	Robot player = new Robot("player");
-	
-	
-	//player variable
-	player.setSpeed(12);
-	player.addKeyboardAdapter(new KeyboardAdapter());
-	
+	Robot player = new Robot(); 
+		
+		//player variables
+		player.addKeyboardAdapter(new KeyboardAdapter());
+		player.setSpeed(12);
 	
 }
-}
+	
+	}
+
